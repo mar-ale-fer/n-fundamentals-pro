@@ -1,0 +1,28 @@
+
+GET http://localhost:3000/
+
+### SEND FETCH SONGS REQUEST
+GET http://localhost:3000/songs/
+
+### Find songs request
+GET http://localhost:3000/songs/1
+
+### Create new song request
+POST http://localhost:3000/songs/
+Content-Type: application/json
+
+{
+    "title": "Yellow",
+    "artists": ["Coldplay", "Miley Cirus"],
+    "releasedDate" : "2020-03-02",
+    "duration" : "03:21"
+}
+
+### Update song request
+PUT http://localhost:3000/songs/1
+
+### Delete song request
+DELETE http://localhost:3000/songs/1
+
+
+
